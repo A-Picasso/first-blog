@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import "./header.css";
+@import "./footer.css";
+@import "./hero.css";
+@import "./content-main.css";
 :root {
   --gradient: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
-  --black-primary: #251F24;
+  --black-primary: #212121;
   --white-primary: #FFFFFF;
   --fontBase: 'Nunito', sans-serif;
-  --headline1: bold 64px/87.3px var(--fontBase);
-  --headline2: bold 40px/54.56px var(--fontBase);
-  --headline3: 600 32px/43.65px var(--fontBase);
-  --headline4: 24px/32px var(--fontBase);
+  --headline1: bold 3.75em/87.3px var(--fontBase);
+  --headline2: bold 2.5em/54.56px var(--fontBase);
+  --headline3: 600 2em/43.65px var(--fontBase);
+  --headline4: 1.5em/32px var(--fontBase);
   --nav-headline: bold 14px/24px var(--fontBase);
-  --body1: 17px/24px var(--fontBase);
+  --body1: 16px/24px var(--fontBase);
   --nav-body: 14px/24px var(--fontBase);
   --grey: #A5A3A5;
   --blue: #157EFB;
@@ -18,5 +22,24 @@
 body {
   background: var(--black-primary);
   color: var(--white-primary);
-  font-family: var(--fontBase);
+  font: var(--body1);
+  margin: 0;
+}
+a {
+  color: var(--white-primary);
+  text-decoration: none;
+}
+
+.section-main h3 {
+  counter-increment: titleList;
+}
+.section-main h3::before {
+  content: counter(titleList)'. ';
+}
+.section-main h3::after {
+  content: '';
+  width: 32px;
+  height: 4px;
+  background: var(--white-primary);
+  display: inline-block;
 }

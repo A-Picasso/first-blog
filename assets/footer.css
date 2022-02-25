@@ -1,0 +1,10 @@
+.container-footer {
+  background: var(--white-primary);
+  color: var(--black-primary);
+  margin-block-start: 113px;
+  padding-block-start: 48px;
+  padding-block-end: 51px;
+}
+.container-footer h3 {
+  margin-block-end: 19px;
+}
