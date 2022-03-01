@@ -1,9 +1,27 @@
+.main {
+  margin-block-start: 64px;
+}
+.wrapper {
+  max-inline-size: 902px;
+  margin: auto;
+  position: relative;
+}
+.main-content {
+  padding-inline: 16px;
+}
 pre {
   background: var(--grey-container);
-  padding: 40px 350px 40px 40px;
+  padding: 40px;
+  overflow: auto;
+  border-radius: 8px;
 }
 blockquote {
-  border-left: 5px solid var(--white-primary);
-  padding-left: 16px;
-  margin: 32px 0;
+  border-inline-start: 5px solid var(--white-primary);
+  line-height: 32px;
+  padding: 24px;
+  margin-block: 32px;
+  margin-inline: 0;
+}
+.container-conceptos img {
+  max-inline-size: 100%;
 }
