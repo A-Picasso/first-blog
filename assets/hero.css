@@ -1,4 +1,9 @@
 .hero {
   background: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../img/patron-figma.png');
-  block-size: 350px;
+  block-size: 100px;
+}
+@media screen and (min-width: 1366px){
+  .hero {
+    block-size: 350px;
+  }
 }

@@ -1,6 +1,9 @@
 .main {
   margin-block-start: 64px;
 }
+.main-content .container-h1 h1 {
+  margin-block-start: 0;
+}
 .wrapper {
   max-inline-size: 902px;
   margin: auto;
@@ -8,6 +11,22 @@
 }
 .main-content {
   padding-inline: 16px;
+}
+.section-main h3 {
+  counter-increment: titleList;
+}
+.section-main h3::before {
+  content: counter(titleList)'. ';
+}
+.section-main h3::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: var(--white-primary);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 pre {
   background: var(--grey-container);
@@ -17,11 +36,48 @@ pre {
 }
 blockquote {
   border-inline-start: 5px solid var(--white-primary);
-  line-height: 32px;
-  padding: 24px;
-  margin-block: 32px;
+  line-height: 22px;
+  padding: 16px;
+  margin-block: 22px;
   margin-inline: 0;
+}
+.container-h1 p {
+  margin-block-end: 64px;
 }
 .container-conceptos img {
   max-inline-size: 100%;
+}
+.container-conceptos h3 {
+  margin-block-start: 40px;
+}
+.container-setup {
+  margin-block: 64px;
+}
+.container-setup img {
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+}
+.container-conceptos img {
+  margin-block-start: 16px;
+}
+.container-setup h2 {
+  margin: 0;
+} 
+.container-conceptos {
+  margin-block-end: 156px;
+}
+.container-flexbox {
+  margin-block-end: 40px;
+}
+.container-flexbox ul li {
+  margin-block-end: 16px;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    margin-block-start: 44px;
+  }
+  .main-content .container-h1 h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }

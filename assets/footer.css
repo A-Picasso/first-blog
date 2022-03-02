@@ -3,8 +3,17 @@
   color: var(--black-primary);
   margin-block-start: 113px;
   padding-block: 40px;
+  text-align: center;
 }
 .container-footer h3 {
   margin-block-end: 19px;
   background: var(--white-primary);
+}
+.container-footer a img {
+  margin-inline: 20px;
+}
+@media screen and (max-width: 768px){
+  .container-footer {
+    margin-block-start: 83px;
+  }
 }

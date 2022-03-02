@@ -3,6 +3,8 @@
 @import "./footer.css";
 @import "./hero.css";
 @import "./content-main.css";
+@import "./slider.css";
+@import "./form.css";
 :root {
   --gradient: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
   --black-primary: #212121;
@@ -16,7 +18,8 @@
   --body1: 16px/24px var(--fontBase);
   --nav-body: 14px/24px var(--fontBase);
   --grey: #A5A3A5;
-  --blue: #157EFB;
+  --blue10: #3a8ff8;
+  --blue30: #157EFB;
   --grey-container: #3A3539;
 }
 body {
@@ -28,20 +31,4 @@ body {
 a {
   color: var(--white-primary);
   text-decoration: none;
-}
-.section-main h3 {
-  counter-increment: titleList;
-}
-.section-main h3::before {
-  content: counter(titleList)'. ';
-}
-.section-main h3::after {
-  content: '';
-  width: 80px;
-  height: 4px;
-  background: var(--white-primary);
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
 }

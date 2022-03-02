@@ -1,0 +1,42 @@
+.container-form h3 {
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+}
+.form input {
+  inline-size: 100%;
+  border: 1px solid var(--white-primary);
+  background-color: var(--black-primary);
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding-block: 12px;
+  padding-inline: 16px;
+  color: var(--white-primary);
+  font: var(--body1);
+  display: block;
+  margin-block: 24px;
+}
+.form button {
+  inline-size: 100%;
+  padding-block: 12px;
+  padding-inline: 16px;
+  background: var(--blue30);
+  border: 1px solid var(--blue30);
+  border-radius: 8px;
+  color: var(--white-primary);
+  font: var(--body1);
+  font-weight: bold;
+}
+.form button:hover {
+  cursor: pointer;
+  background: var(--blue10);
+}
+.form input::placeholder {
+  color: var(--white-primary);
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .container-form h3{
+    text-align: center;
+    margin-block-start: 64px;
+  }
+}

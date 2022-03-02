@@ -1,0 +1,31 @@
+.container-slider{
+  display: block;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+.media { 
+  margin: 0;
+  display: inline-block;
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+}
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 10px;
+}
+.slider-bullet {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background-color: var(--white-primary);
+  border-radius: 50%;
+}
+.slider-bullet:hover {
+  background-color: var(--grey);
+}
+.section-slider p {
+  margin-block-start: 40px;
+}
